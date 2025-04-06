@@ -19,7 +19,7 @@
 #define FILE_HEX_7600           "https://shehabhassan.github.io/FOTA_TEST/2560_sim7600.hex"
 
 /***************************************************************************************************************/
-#define FILE_NAME_1    "NNN.hex"
+#define FILE_NAME_1    "hhh.hex"
 #define FILE_NAME_2    "111.hex"
 
 #define SerialAT  Serial1
@@ -30,6 +30,7 @@
 #define HTTP_READ_CHUNK   440  // read chunk of 10 line for each 43 bytes with adding 10 byte for space and ok unnessery data .
 #define MIN_NO_OF_LENGTH  12
 #define RETRY_LIMIT       3
+// extern veriable shares to aother files 
 extern char filename[];
 extern char filename_PATH[];
 
@@ -40,13 +41,11 @@ void setup_HTTP();
 /***********************************************************************************/
 void sim7600_download_file_from_Server_test_2(const char* URL, String filename);
 /***********************************************************************************/
-void saveToSD(String filename, String data);
 void convertHexToBin(String hexFilename, String binFilename);
 // debug macro ( to print in the serial) u can remove the code will run normal 
 #define DBG(x)           Serial.println(x)      
 #define DBG_no_lin(y)    Serial.print(y)    
 
-#define DEBUG_(...) { Serial.print(" Debug statue: "); Serial.println(__VA_ARGS__); }
-#define DEBUG_FETAL_(...) { Serial.print(" Debug statue: "); Serial.println(__VA_ARGS__); delay(1000);}
+#define DEBUG_FETAL_(...) { Serial.print("Debug statue: "); Serial.println(__VA_ARGS__); delay(1000);}
 
 #endif

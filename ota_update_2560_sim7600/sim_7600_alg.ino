@@ -49,7 +49,7 @@ static String sendATCommand_string(String command, unsigned long timeout) {
           no_of_line+=1;
         }
         else{
-          if(line[0]>='0' && line[0]<='9'){
+          if(line[0]>='0' && line[0]<='9' || (line[0]>='A' && line[0]<='Z')){
              ATResponse += line + "\n";
           }
         }

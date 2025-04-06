@@ -1,12 +1,7 @@
 #include "sim7600_alg.hpp"
 /** PinOut of differrent modules ***/
-// const char URL[] =  FILE_TEXT;
-// const char URL[] =  FILE_BIN_TEXT;
-const char URL2[] =  FILE_HEX_7600;
-// const char URL[] = FILE_HEX_2;
-// const char URL[] = FILE_HEX_SMALL_1;
 const char URL[] =    FILE_HEX_SMALL_2 ;
-
+const char URL2[] =  FILE_HEX_7600;
 /***************** objects and classes ***********************/
 File                       myfile; //create a sd card object
 /**************************variables*************************/
