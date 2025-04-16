@@ -1,0 +1,6 @@
+#define SECRET_SSID "Afaq-2"
+#define SECRET_PASS "Afaq@2030"
+// #define SECRET_SSID "shehab"
+// #define SECRET_PASS "87654321"
+// #define STATIC_IP_A "192.168.0.200"
+#define IP_A        "0.0.0.0"
